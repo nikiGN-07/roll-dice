@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Yahtzee Dice Roller</title>
 </head>
 <body onload="rollDice()">
     <div class="container">
         <h1>Yahtzee Dice Roller</h1>
-        <p>Click the button below or press Enter to roll the dice.</p>
+        <p>Welcome to the Yahtzee Dice Roller! Click the "Roll Dice" button or press Enter to roll the dice five times. The results of each roll will be displayed below.</p>
+        
         <div class="dice-container">
             <div class="dice" id="die1" readonly></div>
             <div class="dice" id="die2" readonly></div>
@@ -17,7 +18,13 @@
             <div class="dice" id="die4" readonly></div>
             <div class="dice" id="die5" readonly></div>
         </div>
+
         <button id="rollButton" onclick="rollDice()" autofocus>Roll Dice</button>
+
+        <h2>Roll Results</h2>
+        <div id="rollResults" class="roll-results">
+            <!-- Roll results will be displayed here -->
+        </div>
     </div>
 
     <script src="script.js"></script>
